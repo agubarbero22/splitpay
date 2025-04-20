@@ -107,7 +107,12 @@ function Content({ children }: { children: React.ReactNode }) {
                     src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7018337169293061"
                     crossOrigin="anonymous"></script>
             <ins className="adsbygoogle"
-                 style={{ display: 'block' }}
+                 style={{
+                   display: 'block',
+                   width: '100%',
+                   height: '90px',
+                   backgroundColor: '#f0f0f0', // fallback ads area color
+                 }}
                  data-ad-client="ca-pub-7018337169293061"
                  data-ad-slot="7033977903"
                  data-ad-format="auto"
@@ -116,7 +121,7 @@ function Content({ children }: { children: React.ReactNode }) {
               (adsbygoogle = window.adsbygoogle || []).push({});
             </script>
           </div>
-    
+
         </div>
       </header>
 
@@ -152,20 +157,19 @@ export default async function RootLayout({
         </NextIntlClientProvider>
         {/* Google AdSense Footer Ad */}
         <div className="footer-ad flex justify-center py-4">
-          <script async
-                  src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7018337169293061"
-                  crossOrigin="anonymous"></script>
+          <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7018337169293061"
+              crossOrigin="anonymous"></script>
           <ins className="adsbygoogle"
-               style={{ display: 'block' }}
-               data-ad-client="ca-pub-7018337169293061"
-               data-ad-slot="1781651221"
-               data-ad-format="auto"
-               data-full-width-responsive="true"></ins>
+              style={{ display: "block" }}
+              data-ad-client="ca-pub-7018337169293061"
+              data-ad-slot="0987654321"
+              data-ad-format="auto"
+              data-full-width-responsive="true"></ins>
           <script>
-            (adsbygoogle = window.adsbygoogle || []).push({});
+              (adsbygoogle = window.adsbygoogle || []).push({});
           </script>
         </div>
-    </body>
+      </body>
     </html>
   )
 }
