@@ -101,6 +101,22 @@ function Content({ children }: { children: React.ReactNode }) {
               <ThemeToggle />
             </li>
           </ul>
+          {/* Google AdSense Horizontal Ad in Header */}
+          <div>
+            <script async
+                    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7018337169293061"
+                    crossOrigin="anonymous"></script>
+            <ins className="adsbygoogle"
+                 style={{ display: 'block' }}
+                 data-ad-client="ca-pub-7018337169293061"
+                 data-ad-slot="7033977903"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+            <script>
+              (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+          </div>
+    
         </div>
       </header>
 
@@ -111,16 +127,16 @@ function Content({ children }: { children: React.ReactNode }) {
 }
 
 export default async function RootLayout({
-  children,
-}: {
+                                           children
+                                         }: {
   children: React.ReactNode
 }) {
   const locale = await getLocale()
   const messages = await getMessages()
   return (
     <html lang={locale} suppressHydrationWarning>
-      <ApplePwaSplash icon="/logo-with-text.png" color="#027756" />
-      <body className="pt-16 min-h-[100dvh] flex flex-col items-stretch bg-slate-50 bg-opacity-30 dark:bg-background">
+    <ApplePwaSplash icon="/logo-with-text.png" color="#027756" />
+    <body className="pt-16 min-h-[100dvh] flex flex-col items-stretch bg-slate-50 bg-opacity-30 dark:bg-background">
         <NextIntlClientProvider messages={messages}>
           <ThemeProvider
             attribute="class"
@@ -134,7 +150,22 @@ export default async function RootLayout({
             <Content>{children}</Content>
           </ThemeProvider>
         </NextIntlClientProvider>
-      </body>
+        {/* Google AdSense Footer Ad */}
+        <div className="footer-ad flex justify-center py-4">
+          <script async
+                  src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7018337169293061"
+                  crossOrigin="anonymous"></script>
+          <ins className="adsbygoogle"
+               style={{ display: 'block' }}
+               data-ad-client="ca-pub-7018337169293061"
+               data-ad-slot="1781651221"
+               data-ad-format="auto"
+               data-full-width-responsive="true"></ins>
+          <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+          </script>
+        </div>
+    </body>
     </html>
   )
 }

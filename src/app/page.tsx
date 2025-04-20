@@ -26,6 +26,22 @@ export default function HomePage() {
               <Link href="/groups">{t('Homepage.button.groups')}</Link>
             </Button>
           </div>
+
+          {/* Google AdSense Ad Below CTA */}
+          <div>
+            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7018337169293061"
+                    crossOrigin="anonymous"></script>
+            <ins className="adsbygoogle"
+                 style={{ display: "block" }}
+                 data-ad-client="ca-pub-7018337169293061"
+                 data-ad-slot="4339224318"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+            <script>
+              (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+          </div>
+
         </div>
       </section>
     </main>
