@@ -2,8 +2,8 @@ import { MetadataRoute } from 'next'
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: 'SplitPay',
-    short_name: 'Split',
+    name: 'Divide',
+    short_name: 'Divide',
     description:
       'A minimalist web application to share expenses with friends and family. No ads, no account, no problem.',
     start_url: '/groups',
