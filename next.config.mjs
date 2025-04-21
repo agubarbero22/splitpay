@@ -27,33 +27,12 @@ const nextConfig = {
   images: {
     remotePatterns
   },
-  headers: async () => [
-    {
-      source: "/(.*)", // Aplica el header a todas las rutas
-      headers: [
-        {
-          // Explicitly allow the required Google domains for scripts and connections
-          key: "Content-Security-Policy",
-          value: `
-              default-src 'self';
-              script-src 'self' https://ep2.adtrafficquality.google https://pagead2.googlesyndication.com;
-              connect-src 'self' https://ep2.adtrafficquality.google https://googleads.g.doubleclick.net;
-              img-src 'self' https://tpc.googlesyndication.com data:;
-              frame-src 'self' https://googleads.g.doubleclick.net;
-              style-src 'self' 'unsafe-inline';
-            `.replace(/\s{2,}/g, " ").trim(),
-        },
-      ],
-    },
-
-  ],
   // Required to run in a codespace (see https://github.com/vercel/next.js/issues/58019)
   experimental: {
     serverActions: {
         allowedOrigins: ['localhost:3000'],
     },
 },
-};
-
+}
 
 export default withNextIntl(nextConfig)
