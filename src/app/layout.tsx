@@ -130,7 +130,7 @@ export default async function RootLayout({
   const messages = await getMessages()
   return (
     <html lang={locale} suppressHydrationWarning>
-    <AdSense pId="ca-pub-7018337169293061"/>
+    <AdSense pId="7018337169293061"/>
     <ApplePwaSplash icon="/logo-with-text.png" color="#027756" />
     <body className="pt-16 min-h-[100dvh] flex flex-col items-stretch bg-slate-50 bg-opacity-30 dark:bg-background">
         <NextIntlClientProvider messages={messages}>
