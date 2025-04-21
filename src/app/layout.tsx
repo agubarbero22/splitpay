@@ -14,6 +14,8 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { Suspense } from 'react'
 import './globals.css'
+import AdBanner from '@/components/AdBanner'
+import AdSense from '@/components/AdSense'
 
 export const metadata: Metadata = {
   metadataBase: new URL(env.NEXT_PUBLIC_BASE_URL),
@@ -103,23 +105,11 @@ function Content({ children }: { children: React.ReactNode }) {
           </ul>
           {/* Google AdSense Horizontal Ad in Header */}
           <div>
-            <script async
-                    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7018337169293061"
-                    crossOrigin="anonymous"></script>
-            <ins className="adsbygoogle"
-                 style={{
-                   display: 'block',
-                   width: '100%',
-                   height: '90px',
-                   backgroundColor: '#f0f0f0', // fallback ads area color
-                 }}
-                 data-ad-client="ca-pub-7018337169293061"
-                 data-ad-slot="7033977903"
-                 data-ad-format="auto"
-                 data-full-width-responsive="true"></ins>
-            <script>
-              (adsbygoogle = window.adsbygoogle || []).push({});
-            </script>
+            <AdBanner
+              dataAdFormat="auto"
+              dataFullWidthResponsive={true}
+              dataAdSlot="1781651221"
+            />
           </div>
 
         </div>
@@ -140,6 +130,7 @@ export default async function RootLayout({
   const messages = await getMessages()
   return (
     <html lang={locale} suppressHydrationWarning>
+    <AdSense pId="ca-pub-7018337169293061"/>
     <ApplePwaSplash icon="/logo-with-text.png" color="#027756" />
     <body className="pt-16 min-h-[100dvh] flex flex-col items-stretch bg-slate-50 bg-opacity-30 dark:bg-background">
         <NextIntlClientProvider messages={messages}>

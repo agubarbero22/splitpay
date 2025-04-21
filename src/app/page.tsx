@@ -1,6 +1,7 @@
 import { Button } from '@/components/ui/button'
 import { useTranslations } from 'next-intl'
 import Link from 'next/link'
+import AdBanner from '@/components/AdBanner'
 
 // FIX for https://github.com/vercel/next.js/issues/58615
 // export const dynamic = 'force-dynamic'
@@ -27,23 +28,20 @@ export default function HomePage() {
             </Button>
           </div>
 
-          {/* Google AdSense Ad Below CTA */}
-          <div>
-            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7018337169293061"
-                    crossOrigin="anonymous"></script>
-            <ins className="adsbygoogle"
-                 style={{ display: "block" }}
-                 data-ad-client="ca-pub-7018337169293061"
-                 data-ad-slot="4339224318"
-                 data-ad-format="auto"
-                 data-full-width-responsive="true"></ins>
-            <script>
-              (adsbygoogle = window.adsbygoogle || []).push({});
-            </script>
+          <div className="mt-4">
+            <AdBanner
+              dataAdFormat="auto"
+              dataFullWidthResponsive={true}
+              dataAdSlot="1781651221"
+            />
           </div>
-
         </div>
       </section>
+      <AdBanner
+        dataAdFormat="auto"
+        dataFullWidthResponsive={true}
+        dataAdSlot="7033977903"
+      />
     </main>
   )
 }
