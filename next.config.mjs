@@ -35,14 +35,15 @@ const nextConfig = {
           key: "Content-Security-Policy",
           value: `
               default-src 'self';
-              script-src 'self' https://pagead2.googlesyndication.com https://adservice.google.com;
-              connect-src 'self' https://googleads.g.doubleclick.net https://pagead2.googlesyndication.com;
-              frame-src 'self' https://googleads.g.doubleclick.net https://tpc.googlesyndication.com;
-              img-src 'self' https://pagead2.googlesyndication.com https://tpc.googlesyndication.com data:;
+              script-src 'self' https://pagead2.googlesyndication.com https://adservice.google.com https://ep1.adtrafficquality.google;
+              connect-src 'self' https://googleads.g.doubleclick.net https://pagead2.googlesyndication.com https://ep1.adtrafficquality.google;
+              frame-src 'self' https://googleads.g.doubleclick.net https://tpc.googlesyndication.com https://ep1.adtrafficquality.google;
+              img-src 'self' https://pagead2.googlesyndication.com https://tpc.googlesyndication.com https://ep1.adtrafficquality.google data:;
               style-src 'self' 'unsafe-inline';
               font-src 'self';
               object-src 'none';
-            `.replace(/\s{2,}/g, ' ').trim(), // Limpia formato extra en los headers
+            `.replace(/\s{2,}/g, " ").trim(), // Clean CSP formatting
+
         },
       ],
     },
