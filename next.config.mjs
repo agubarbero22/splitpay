@@ -32,18 +32,16 @@ const nextConfig = {
       source: "/(.*)", // Aplica el header a todas las rutas
       headers: [
         {
+          // Explicitly allow the required Google domains for scripts and connections
           key: "Content-Security-Policy",
           value: `
               default-src 'self';
-              script-src 'self' https://pagead2.googlesyndication.com https://adservice.google.com https://ep1.adtrafficquality.google;
-              connect-src 'self' https://googleads.g.doubleclick.net https://pagead2.googlesyndication.com https://ep1.adtrafficquality.google;
-              frame-src 'self' https://googleads.g.doubleclick.net https://tpc.googlesyndication.com https://ep1.adtrafficquality.google;
-              img-src 'self' https://pagead2.googlesyndication.com https://tpc.googlesyndication.com https://ep1.adtrafficquality.google data:;
+              script-src 'self' https://ep2.adtrafficquality.google https://pagead2.googlesyndication.com;
+              connect-src 'self' https://ep2.adtrafficquality.google https://googleads.g.doubleclick.net;
+              img-src 'self' https://tpc.googlesyndication.com data:;
+              frame-src 'self' https://googleads.g.doubleclick.net;
               style-src 'self' 'unsafe-inline';
-              font-src 'self';
-              object-src 'none';
-            `.replace(/\s{2,}/g, " ").trim(), // Clean CSP formatting
-
+            `.replace(/\s{2,}/g, " ").trim(),
         },
       ],
     },
