@@ -175,7 +175,7 @@ const ExpenseListForSearch = ({
               />
             ))}
             <p className="px-6 text-sm py-6">
-              <Button variant="link" asChild className="-m-4">
+              <Button asChild className="-m-2">
                 <Link href={`/groups/${groupId}/balances`}>
                   {t('seeBalance')}
                 </Link>
