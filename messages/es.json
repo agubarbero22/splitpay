@@ -19,6 +19,7 @@
     "create": "Crear gasto",
     "createFirst": "Crea el primero",
     "noExpenses": "Tu grupo aun no tiene gastos.",
+    "seeBalance": "Ver balances",
     "exportJson": "Exportar a JSON",
     "exportCsv": "Exportar a CSV",
     "searchPlaceholder": "Busca un gasto…",

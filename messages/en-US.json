@@ -20,6 +20,7 @@
     "create": "Create expense",
     "createFirst": "Create the first one",
     "noExpenses": "Your group doesn’t contain any expense yet.",
+    "seeBalance": "See balances",
     "export": "Export",
     "exportJson": "Export to JSON",
     "exportCsv": "Export to CSV",
