@@ -10,11 +10,11 @@
       "title": "Funzionalità Principali",
       "groupExpenses": {
         "title": "Spese di Gruppo",
-        "description": "Crea gruppi per condividere le spese con amici, familiari o coinquilini. Tieni traccia dei saldi facilmente in un unico posto."
+        "description": "Crea gruppi per condividere le spese con amici, familiari o coinquilini. Controlla i saldi facilmente in un unico posto."
       },
       "splitPayments": {
         "title": "Divisione dei Pagamenti",
-        "description": "Dividi le spese in modo uniforme o non uniforme. Crea rimborsi e tieni traccia di chi deve cosa a chi."
+        "description": "Dividi le spese in modo uniforme o non uniforme. Crea rimborsi e controlla chi deve cosa a chi."
       },
       "receiptScanning": {
         "title": "Scansione Ricevute",
