@@ -3,20 +3,20 @@ import { getUserLocale } from './lib/locale'
 
 export const localeLabels = {
   'en-US': 'English',
-  fi: 'Suomi',
-  'fr-FR': 'Français',
+ //fi: 'Suomi',
+  //'fr-FR': 'Français',
   es: 'Español',
-  'de-DE': 'Deutsch',
-  'zh-CN': '简体中文',
-  'zh-TW': '正體中文',
-  'pl-PL': 'Polski',
-  'ru-RU': 'Русский',
+  //'de-DE': 'Deutsch',
+  //'zh-CN': '简体中文',
+  //'zh-TW': '正體中文',
+  //'pl-PL': 'Polski',
+  //'ru-RU': 'Русский',
   'it-IT': 'Italiano',
-  'ua-UA': 'Українська',
-  ro: 'Română',
-  'tr-TR': 'Türkçe',
-  'pt-BR': 'Português Brasileiro',
-  'nl-NL': 'Nederlands',
+  // 'ua-UA': 'Українська',
+  //ro: 'Română',
+  // 'tr-TR': 'Türkçe',
+  //'pt-BR': 'Português Brasileiro',
+  // 'nl-NL': 'Nederlands',
 } as const
 
 export const locales: (keyof typeof localeLabels)[] = Object.keys(

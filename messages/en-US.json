@@ -1,10 +1,59 @@
 {
   "Homepage": {
-    "title": "Share <strong>Expenses</strong> with <strong>Friends & Family</strong>",
-    "description": "Welcome to your new <strong>Divide</strong> instance !",
+    "title": "Split expenses with <strong>friends and family</strong> with ease",
+    "description": "A simple and <strong>free</strong> tool to track shared expenses and settle debts with friends, roommates or your partner.",
     "button": {
-      "groups": "Go to groups",
-      "github": "GitHub"
+      "groups": "My Groups"
+    },
+    "features": {
+      "title": "Key Features",
+      "groupExpenses": {
+        "title": "Group Expenses",
+        "description": "Create groups to share expenses with friends, family, or roommates. Track balances easily in one place."
+      },
+      "splitPayments": {
+        "title": "Split Payments",
+        "description": "Split expenses evenly or unevenly. Create reimbursements and track who owes what to whom."
+      },
+      "receiptScanning": {
+        "title": "Receipt Scanning",
+        "description": "Upload photos of receipts to create expenses automatically using AI-powered receipt scanning."
+      }
+    },
+    "howItWorks": {
+      "title": "How It Works",
+      "step1": {
+        "title": "Create a Group",
+        "description": "Start by creating a group for your trip, household, or any shared expense situation."
+      },
+      "step2": {
+        "title": "Add Expenses",
+        "description": "Record expenses as they happen. Specify who paid and who should share the cost."
+      },
+      "step3": {
+        "title": "Settle Up",
+        "description": "See who owes what to whom and settle debts with minimum transactions."
+      }
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "question1": {
+        "title": "Do I need to create an account?",
+        "answer": "No! Divide is designed to be simple and privacy-focused. There's no need to create an account or provide personal information."
+      },
+      "question2": {
+        "title": "Is my data secure?",
+        "answer": "Yes, all your expense data is stored securely. We don't track personal information, and your expense data is only accessible through your unique group links."
+      },
+      "question3": {
+        "title": "Can I export my expense data?",
+        "answer": "Yes, you can export your expense data to CSV format for further analysis or record-keeping."
+      }
+    },
+    "callToAction": {
+      "title": "Start Splitting Expenses Today",
+      "description": "No registration required. Free to use. Get started in seconds.",
+      "button": "Create Your First Group"
     }
   },
   "Header": {

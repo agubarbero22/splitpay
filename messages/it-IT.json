@@ -5,6 +5,56 @@
     "button": {
       "groups": "Vai ai gruppi",
       "github": "GitHub"
+    },
+    "features": {
+      "title": "Funzionalità Principali",
+      "groupExpenses": {
+        "title": "Spese di Gruppo",
+        "description": "Crea gruppi per condividere le spese con amici, familiari o coinquilini. Tieni traccia dei saldi facilmente in un unico posto."
+      },
+      "splitPayments": {
+        "title": "Divisione dei Pagamenti",
+        "description": "Dividi le spese in modo uniforme o non uniforme. Crea rimborsi e tieni traccia di chi deve cosa a chi."
+      },
+      "receiptScanning": {
+        "title": "Scansione Ricevute",
+        "description": "Carica foto delle ricevute per creare spese automaticamente utilizzando la scansione delle ricevute basata su IA."
+      }
+    },
+    "howItWorks": {
+      "title": "Come Funziona",
+      "step1": {
+        "title": "Crea un Gruppo",
+        "description": "Inizia creando un gruppo per il tuo viaggio, casa o qualsiasi situazione di spese condivise."
+      },
+      "step2": {
+        "title": "Aggiungi Spese",
+        "description": "Registra le spese man mano che avvengono. Specifica chi ha pagato e chi dovrebbe condividere il costo."
+      },
+      "step3": {
+        "title": "Regola i Conti",
+        "description": "Vedi chi deve cosa a chi e regola i debiti con il minimo delle transazioni."
+      }
+    },
+    "faq": {
+      "title": "Domande Frequenti",
+      "question1": {
+        "title": "Devo creare un account?",
+        "answer": "No! Divide è progettato per essere semplice e incentrato sulla privacy. Non è necessario creare un account o fornire informazioni personali."
+      },
+      "question2": {
+        "title": "I miei dati sono sicuri?",
+        "answer": "Sì, tutti i tuoi dati sulle spese sono archiviati in modo sicuro. Non tracciamo informazioni personali e i tuoi dati sulle spese sono accessibili solo tramite i link unici del tuo gruppo."
+      },
+      "question3": {
+        "title": "Posso esportare i miei dati di spesa?",
+        "answer": "Sì, puoi esportare i tuoi dati di spesa in formato CSV per ulteriori analisi o tenere traccia dei record."
+      }
+    },
+    "callToAction": {
+      "title": "Inizia a Dividere le Spese Oggi",
+      "description": "Nessuna registrazione richiesta. Gratuito da usare. Inizia in pochi secondi.",
+      "button": "Crea il Tuo Primo Gruppo"
     }
   },
   "Header": {
@@ -20,6 +70,7 @@
     "create": "Crea spesa",
     "createFirst": "Crea la prima",
     "noExpenses": "Il tuo gruppo non contiene ancora spese.",
+    "seeBalance": "Vedi bilanci",
     "exportJson": "Esporta file JSON",
     "exportCsv": "Esporta file CSV",
     "searchPlaceholder": "Cerca una spesa…",

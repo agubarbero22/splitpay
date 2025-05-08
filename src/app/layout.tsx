@@ -124,26 +124,28 @@ export default async function RootLayout({
     <AdSense pId="7018337169293061"/>
     <ApplePwaSplash icon="/logo-with-text.png" color="#027756" />
     <body className="pt-16 min-h-[100dvh] flex flex-col items-stretch bg-slate-50 bg-opacity-30 dark:bg-background">
-        <NextIntlClientProvider messages={messages}>
-          <ThemeProvider
-            attribute="class"
-            defaultTheme="system"
-            enableSystem
-            disableTransitionOnChange
-          >
-            <Suspense>
-              <ProgressBar />
-            </Suspense>
-            <Content>{children}</Content>
-          </ThemeProvider>
-        </NextIntlClientProvider>
-        {/* Google AdSense Footer Ad */}
+      <NextIntlClientProvider messages={messages}>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <Suspense>
+            <ProgressBar />
+          </Suspense>
+          <Content>{children}</Content>
+        </ThemeProvider>
+      </NextIntlClientProvider>
+      {/* Google AdSense Footer Ad */}
+      <div className="w-full max-w-[1200px] mx-auto px-4 my-4">
         <AdBanner
           dataAdFormat="auto"
           dataFullWidthResponsive={true}
           dataAdSlot="1781651221"
         />
-      </body>
+      </div>
+    </body>
     </html>
   )
 }

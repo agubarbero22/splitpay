@@ -4,6 +4,56 @@
     "description": "¡Bienvenido a tu nueva instancia de <strong>Divide</strong>!",
     "button": {
       "groups": "Ir a grupos"
+    },
+    "features": {
+      "title": "Características Principales",
+      "groupExpenses": {
+        "title": "Gastos en Grupo",
+        "description": "Crea grupos para compartir gastos con amigos, familia o compañeros de piso. Lleva un seguimiento de los balances fácilmente en un solo lugar."
+      },
+      "splitPayments": {
+        "title": "División de Pagos",
+        "description": "Divide los gastos de manera equitativa o desigual. Crea reembolsos y controla quién debe qué a quién."
+      },
+      "receiptScanning": {
+        "title": "Escaneo de Recibos",
+        "description": "Sube fotos de recibos para crear gastos automáticamente usando nuestro escaneo de recibos potenciado por IA."
+      }
+    },
+    "howItWorks": {
+      "title": "Cómo Funciona",
+      "step1": {
+        "title": "Crea un Grupo",
+        "description": "Comienza creando un grupo para tu viaje, hogar o cualquier situación de gastos compartidos."
+      },
+      "step2": {
+        "title": "Añade Gastos",
+        "description": "Registra los gastos a medida que ocurren. Especifica quién pagó y quién debe compartir el costo."
+      },
+      "step3": {
+        "title": "Salda Cuentas",
+        "description": "Mira quién debe qué a quién y salda las deudas con el mínimo de transacciones."
+      }
+    },
+    "faq": {
+      "title": "Preguntas Frecuentes",
+      "question1": {
+        "title": "¿Necesito crear una cuenta?",
+        "answer": "¡No! Divide está diseñado para ser simple y enfocado en la privacidad. No hay necesidad de crear una cuenta o proporcionar información personal."
+      },
+      "question2": {
+        "title": "¿Están seguros mis datos?",
+        "answer": "Sí, todos tus datos de gastos se almacenan de forma segura. No rastreamos información personal, y tus datos de gastos solo son accesibles a través de los enlaces únicos de tu grupo."
+      },
+      "question3": {
+        "title": "¿Puedo exportar mis datos de gastos?",
+        "answer": "Sí, puedes exportar tus datos de gastos a formato CSV para análisis adicional o mantener registros."
+      }
+    },
+    "callToAction": {
+      "title": "Comienza a Dividir Gastos Hoy",
+      "description": "Sin necesidad de registro. Gratuito. Comienza en segundos.",
+      "button": "Crea Tu Primer Grupo"
     }
   },
   "Header": {
